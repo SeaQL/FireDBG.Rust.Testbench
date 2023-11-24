@@ -1,0 +1,10 @@
+[workspace]
+
+[package]
+name = "tic_tac_toe"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+firedbg-lib = "0.1"

@@ -1,0 +1,64 @@
+#![feature(prelude_import)]
+#[prelude_import]
+use std::prelude::rust_2021::*;
+#[macro_use]
+extern crate std;
+use firedbg_lib::fire;
+fn roll(i: i32) -> Result<(), ()> {
+    {
+        ::std::io::_print(format_args!("roll {0}\n", i));
+    };
+    let (a, b, c) = (dice(i), dice(i), dice(i));
+    a?;
+    b?;
+    c?;
+    if firedbg_lib::__firedbg_trace__("roll_u32", fastrand::u32(0..4)) == 0 {
+        roll(i - 1)
+    } else {
+        throw(i - 1)
+    }
+}
+fn throw(i: i32) -> Result<(), ()> {
+    {
+        ::std::io::_print(format_args!("throw {0}\n", i));
+    };
+    match firedbg_lib::__firedbg_trace__("throw -> i32", fastrand::i32(1..=3)) {
+        1 => dice(i)?,
+        2 => {
+            let (a, b) = (dice(i), dice(i));
+            a?;
+            b?;
+        }
+        3 => {
+            let (a, b, c) = (dice(i), dice(i), dice(i));
+            a?;
+            b?;
+            c?;
+        }
+        _ => ::core::panicking::panic("internal error: entered unreachable code"),
+    }
+    if firedbg_lib::__firedbg_trace__("throw -> bool", fastrand::bool()) {
+        roll(i - 1)
+    } else {
+        throw(i - 1)
+    }
+}
+fn dice(i: i32) -> Result<(), ()> {
+    {
+        ::std::io::_print(format_args!("dice {0} = ", i));
+    };
+    if firedbg_lib::__firedbg_trace__("fastrand::i32(0..i)", fastrand::i32(0..i)) == 0 {
+        {
+            ::std::io::_print(format_args!("err\n"));
+        };
+        Err(())
+    } else {
+        {
+            ::std::io::_print(format_args!("ok\n"));
+        };
+        Ok(())
+    }
+}
+fn main() {
+    roll(25).unwrap();
+}

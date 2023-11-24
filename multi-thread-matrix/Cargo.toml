@@ -1,0 +1,12 @@
+[workspace]
+
+[package]
+name = "multi-thread-matrix"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+fastrand = "2"
+firedbg-lib = "0.1"
+visioncortex = "0.8.5"

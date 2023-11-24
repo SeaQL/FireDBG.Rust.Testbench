@@ -1,0 +1,11 @@
+[workspace]
+
+[package]
+name = "roll_dice"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+fastrand = "2"
+firedbg-lib = "0.1"

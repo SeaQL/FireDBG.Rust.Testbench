@@ -1,0 +1,5 @@
+target/
+# Ignore all the files in firedbg folder recursively
+/**/firedbg/**
+# But exclude all the folders in firedbg recursively
+!/**/firedbg/**/
