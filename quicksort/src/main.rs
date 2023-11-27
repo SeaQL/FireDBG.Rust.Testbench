@@ -26,7 +26,7 @@ fn main() {
     let mut numbers: Vec<_> = repeat_with(|| fastrand::i32(1..max)).take(n).collect();
 
     println!("Input:  {:?}", numbers);
-    quick_sort::run(&mut numbers);
+    quicksort::run(&mut numbers);
     println!("Sorted: {:?}", numbers);
 
     let mut c = 0;

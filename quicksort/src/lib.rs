@@ -35,6 +35,5 @@ fn partition<T: PartialOrd>(arr: &mut [T], low: isize, high: isize) -> isize {
         }
     }
     arr.swap(store_index as usize, pivot as usize);
-    fire::dbg!("after", arr);
     store_index
 }

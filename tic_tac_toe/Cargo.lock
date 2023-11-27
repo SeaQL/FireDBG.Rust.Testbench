@@ -9,7 +9,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0828665e79736ca4153c43e6c6048b768227ba42676cf3b31c98bbeafb0b936a"
 
 [[package]]
-name = "sudoku"
+name = "tic_tac_toe"
 version = "0.1.0"
 dependencies = [
  "firedbg-lib",
