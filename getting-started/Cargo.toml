@@ -1,0 +1,2 @@
+[workspace]
+members = ["quicksort", "book-store"]
