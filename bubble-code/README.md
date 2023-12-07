@@ -1,9 +1,9 @@
-## Multi Thread Matrix
+## Bubble Code
 
 ![](screenshot.png)
 
 Debug with FireDBG debugger:
 
 ```sh
-firedbg run multi-thread-matrix
+firedbg run bubble-code
 ```

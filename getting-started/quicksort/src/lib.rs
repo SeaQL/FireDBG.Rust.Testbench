@@ -31,16 +31,12 @@ fn partition<T: PartialOrd>(arr: &mut [T], low: isize, high: isize) -> isize {
             break;
         } else {
             fire::dbg!("swap", &arr[store_index as usize..=last_index as usize]);
-            swap(&mut arr[store_index as usize..=last_index as usize]);
+            arr.swap(store_index as usize, last_index as usize);
         }
     }
     fire::dbg!("swap", &arr[store_index as usize..=pivot as usize]);
-    swap(&mut arr[store_index as usize..=pivot as usize]);
+    arr.swap(store_index as usize, pivot as usize);
     store_index
-}
-
-fn swap<T: PartialOrd>(arr: &mut [T]) {
-    arr.swap(0, arr.len() - 1);
 }
 
 #[cfg(test)]

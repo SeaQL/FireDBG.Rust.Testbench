@@ -1,2 +1,3 @@
 [workspace]
+resolver = "2"
 members = ["quicksort", "book-store"]

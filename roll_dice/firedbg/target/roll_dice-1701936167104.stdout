@@ -1,0 +1,11 @@
+roll 25
+dice 25 = ok
+dice 25 = ok
+dice 25 = ok
+throw 24
+dice 24 = ok
+dice 24 = ok
+dice 24 = ok
+throw 23
+dice 23 = err
+dice 23 = ok

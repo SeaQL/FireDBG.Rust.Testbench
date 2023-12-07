@@ -1,9 +1,9 @@
-## Multi Thread Matrix
+## Getting Started
 
 ![](screenshot.png)
 
 Debug with FireDBG debugger:
 
 ```sh
-firedbg run multi-thread-matrix
+firedbg example random100
 ```

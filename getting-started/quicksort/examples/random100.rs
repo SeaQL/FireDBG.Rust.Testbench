@@ -2,7 +2,7 @@ use std::iter::repeat_with;
 
 fn main() {
     const SEED: u64 = 1216;
-    const N: usize = 10;
+    const N: usize = 100;
 
     fastrand::seed(SEED);
 

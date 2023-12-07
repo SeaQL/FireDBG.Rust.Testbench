@@ -4,9 +4,9 @@ version = 3
 
 [[package]]
 name = "firedbg-lib"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0828665e79736ca4153c43e6c6048b768227ba42676cf3b31c98bbeafb0b936a"
+checksum = "5f249d193cdea8e64f04f819ec98d3621d5d19585b69e1fa10adafab11082531"
 
 [[package]]
 name = "tic_tac_toe"
