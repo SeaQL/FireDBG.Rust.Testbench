@@ -1,6 +1,6 @@
 # The Rust Testbench for FireDBG
 
-Each sub-directory is a Cargo workspace. Please open each folder in VS Code with "Open Folder ...". For convenience, each example already contains a sample run.
+Each sub-directory is a Cargo workspace. Please open each folder in VS Code with "Open Folder ...". For convenience, each example already contains a sample run (where they're under `xxx/firedbg/target/`).
 
 ## Basics
 
