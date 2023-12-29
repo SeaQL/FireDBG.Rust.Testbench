@@ -1,2 +1,23 @@
 [workspace.members]
 quicksort = { trace = "full" } 
+
+[[targets]]
+# `quicksort/src/bin/quicksort.rs` (Binary)
+name = "quicksort_100"
+target.type = "binary"
+target.name = "quicksort"
+argv = ["100", "--seed", "1212"]
+
+[[targets]]
+# `quicksort/src/bin/quicksort.rs` (Binary)
+name = "quicksort_888"
+target.type = "binary"
+target.name = "quicksort"
+argv = ["888"]
+
+[[targets]]
+# `quicksort/examples/random100.rs` (Example)
+name = "random100_1"
+target.type = "example"
+target.name = "random100"
+argv = ["argv_random100"]
