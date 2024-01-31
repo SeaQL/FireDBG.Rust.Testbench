@@ -1,0 +1,8 @@
+[package]
+name = "fibonacci"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+firedbg-lib = "0.1"
+lazy_static = { version = "1.4" }
